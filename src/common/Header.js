@@ -7,21 +7,27 @@ import {
     NavBtnLink,
 } from './NavBarElements';
 
+import logo from '../images/logo.svg'
+
 function Header() {
     return (
         <>
             <Nav>
                 <NavMenu>
+                    <div style={{ display: 'flex', alignItems: 'center', marginRight: 50 }}>
+                        <img src={logo} />
+                    </div>
+
                     <NavLink to='/' activeStyle>
                         Home
                     </NavLink>
                     <NavLink to='/products' activeStyle>
                         Products
                     </NavLink>
-                    <NavLink to='/annual' activeStyle>
+                    <NavLink to='/why-us' activeStyle>
                         Why us?
                     </NavLink>
-                    <NavLink to='/team' activeStyle>
+                    <NavLink to='/pricing' activeStyle>
                         Pricing
                     </NavLink>
                 </NavMenu>
@@ -29,7 +35,7 @@ function Header() {
                     <NavLink to='/sign-up' activeStyle>
                         Sign In
                     </NavLink>
-                    <NavBtnLink to='/signin'>Request Demo</NavBtnLink>
+                    <NavBtnLink to='/demo'>Request Demo</NavBtnLink>
                 </NavBtn>
             </Nav>
         </>
