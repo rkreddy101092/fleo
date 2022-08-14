@@ -57,19 +57,19 @@ function BookTrailSection() {
     }]
 
     return (
-        <div style={{ paddingTop: 100, paddingBottom: 100, padding: "100px calc((100vw - 1000px) / 6)" }}>
+        <div className='pt-100 pb-100 padding-fluid'>
             <span className='head_title'>Book 30 day FREE trial</span>
             <div style={{ display: 'flex', width: '100%', justifyContent: 'center', marginTop: 40 }}>
-                <input style={{ flex: 0.8, fontFamily: `'Mulish', sans-serif`, borderRadius: 8, border: '1px solid #000', height: 60, paddingLeft: 20, fontSize: 24 }} placeholder="Enter Email and book for a free trial " />
+                <input className='email_input' placeholder="Enter Email and book for a free trial" />
                 <Button style={{ flex: 0.2 }}>Submit</Button>
             </div>
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 120 }}>
+            <div className='book_feature_div'>
                 <div style={{ flex: 0.3 }}>
                     {list1 && list1.map((i, index) => {
                         return renderItem({ icon: i.icon, title: i.title, description: i.description });
                     })}
                 </div>
-                <img src={okrsList} style={{ height: 320, width: 'auto' }} />
+                <img src={okrsList} className="book_feature_image" />
                 <div style={{ flex: 0.3 }}>
                     {list2 && list2.map((i, index) => {
                         return renderItem({ icon: i.icon, title: i.title, description: i.description });

@@ -5,6 +5,8 @@ import Section2 from './Section2';
 import Section4 from './Section4';
 import Section5 from './Section5';
 import Testimonial from './Testimonial';
+import './Home.css';
+
 
 function Home() {
     return (

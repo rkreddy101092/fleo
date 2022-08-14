@@ -8,22 +8,22 @@ import logo5 from '../../images/safex.svg';
 
 function Section1() {
     return (
-        <div style={{ paddingTop: 100 }}>
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start' }}>
-                <div style={{ flex: 0.5, paddingLeft: 'calc((100vw - 1000px) / 6)', textAlign: 'left' }}>
+        <div className='section1_start'>
+            <div className='section1_main'>
+                <div className='left-fluid-padding section1_inner' >
                     <span className='head_title'>Create high performance</span><br />
                     <span className='head_title'>culture with OKRs</span>
                     <p className='description'>Use Fleo to make goals effective and
                         gets teams focused on company growth</p>
                 </div>
-                <img src={image} style={{ flex: 0.5, height: "auto", width: '100%', resize: 'contain', objectFit: 'contain' }} />
+                <img src={image} className="section1_image" />
             </div>
-            <div style={{ backgroundColor: '#FFFFFF', alignItems: 'center', display: 'flex', height: 90, bottom: 0 }}>
-                <img src={logo1} style={{ flex: 0.5, height: 50, width: 'auto', resize: 'contain', objectFit: 'contain' }} />
-                <img src={logo2} style={{ flex: 0.5, height: 50, width: 'auto', resize: 'contain', objectFit: 'contain' }} />
-                <img src={logo3} style={{ flex: 0.5, height: 50, width: 'auto', resize: 'contain', objectFit: 'contain' }} />
-                <img src={logo4} style={{ flex: 0.5, height: 50, width: 'auto', resize: 'contain', objectFit: 'contain' }} />
-                <img src={logo5} style={{ flex: 0.5, height: 50, width: 'auto', resize: 'contain', objectFit: 'contain' }} />
+            <div className='clients_div'>
+                <img src={logo1} className="client_logo" />
+                <img src={logo2} className="client_logo" />
+                <img src={logo3} className="client_logo" />
+                <img src={logo4} className="client_logo" />
+                <img src={logo5} className="client_logo" />
             </div>
         </div>
     )

@@ -8,20 +8,20 @@ import twitter from '../images/twitter.svg'
 function Footer() {
     return (
         <div className='footer_main'>
-            <div style={{ flex: 0.3, textAlign: 'left' }}>
+            <div className='footer_address' >
                 <span className='footer_text'>
-                    Email: hello@fleo.io
+                    Email: <b>hello@fleo.io</b>
                 </span><br />
                 <span className='footer_text'>
-                    Phone: +91 87654 44000
+                    Phone: <b>+91 87654 44000</b>
                 </span><br />
                 <span className='footer_text'>
-                    Address: No. 1207/343, 9th Main, Sector 7, HSR Layout, Bengaluru, Karnataka - 560102
+                    Address: <b>No. 1207/343, 9th Main, Sector 7, HSR Layout, Bengaluru, Karnataka - 560102</b>
                 </span>
             </div>
 
             <img src={whitelogo} />
-            <div style={{ flex: 0.3, textAlign: 'right' }}>
+            <div className='footer_social' style={{}}>
                 <div style={{ marginBottom: 30 }}>
                     <a href='#'>
                         <img src={linkedin} className='social_icons' />

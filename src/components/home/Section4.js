@@ -27,23 +27,19 @@ function Section4() {
         description: 'Fleo  shows you the areas that need your attention, it will be your go- to tool for internal business reviews.'
     }]
     return (
-        <div style={{ paddingTop: 100, paddingBottom: 100, }}>
+        <div className='pt-100 pb-100'>
             <div style={{ marginBottom: 40, padding: `0px calc((100vw - 1000px) / 6)` }}>
                 <span className='head_title'>Know the performance pulse to take</span><br />
                 <span className='head_title'>better decisions</span>
             </div>
             <span className='description_section_3'>Fleo shows you the areas  that need your attention</span><br />
             <span className='description_section_3'>and winners who should be appreciated</span>
-            <div style={{ marginTop: 40, padding: `100px calc((100vw - 1000px) / 6)` }} className='section4_main'>
+            <div className='section4_main'>
                 {list && list.map((i, index) => {
                     return <FeatureBox item={i} key={index} />
                 })}
             </div>
-
-
-        </div >
-
-
+        </div>
     )
 }
 
